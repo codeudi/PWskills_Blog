@@ -13,7 +13,7 @@ body{
 }
 #outline{
     width:1110px;
-    height:588px;
+    height:630px;
     background-color: #FFFFFF;
     border-radius: 33px;
     display: flex;
@@ -32,6 +32,7 @@ body{
     width:257px;
     height:204px;
     margin:20px;
+    border:2px solid white;
 }
 #title_para{
     width:540px;

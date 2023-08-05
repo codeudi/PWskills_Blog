@@ -1,4 +1,4 @@
-
+localStorage.clear()
 let var1=document.getElementById("addbtn")
 let var2=document.getElementsByClassName("blog_modal")
 
@@ -37,10 +37,9 @@ var3.addEventListener("click",()=>{
     else
     {
     var4[0].innerHTML=var4[0].innerHTML+
-    '<div class="box"> <img src="'+imgurl+'"class="picture"/> <p class="text" id="blog_title">'+title+'</p> <p id="blog_desc" class="text">'+descrip+'</p><button id="read">Read</button></div>'
+    '<div class="box" id="blog"'+c+'> <img src="'+imgurl+'"class="picture"/> <p class="text" id="blog_title">'+title+'</p> <p id="blog_desc" class="text">'+descrip+'</p><button id="read" '+c+'class="read"><a href="/Read_page/index.html?id=blog'+c+'" target=_blank>Read</a></button></div>'
     }
 
-       
        let obj=JSON.stringify({"imageurl":imgurl,"BlogTitle":title,"description":descrip,"content":blogdata})
 
        localStorage.setItem("blog"+c,obj)
@@ -50,8 +49,8 @@ var3.addEventListener("click",()=>{
     var5[2].value=""
     var5[3].value=""
     var5[4].value=""
-
 })
+
  function removeblur()
  {
     document.getElementById("section1").classList.remove("blur")
