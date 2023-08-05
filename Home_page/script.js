@@ -1,5 +1,4 @@
 
-
 let var1=document.getElementById("addbtn")
 let var2=document.getElementsByClassName("blog_modal")
 

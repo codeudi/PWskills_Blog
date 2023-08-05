@@ -11,9 +11,26 @@ body{
 .blur{
     filter: blur(4px);
 }
+#title{
+    color:#FF9900;
+    font-weight: bolder;
+}
 #addbtn{
     height:30px;
     width:30px;
+    margin-top: 13px;
+    padding-left:0px;
+    padding-right:0px;
+    transition: padding-left 0.3s ease, padding-right 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+}
+#addbtn:hover{
+    padding-left:35px;
+    padding-right:35px;
 }
 #logo_section{
     display: flex;
@@ -24,14 +41,10 @@ body{
 }
 #section1{
     display:flex;
-    justify-content: center;
-    gap:1000px;
+    justify-content:space-between;
+    margin: 20px 40px 40px 40px;
 }
 
-#addbtn{
-    border-radius: 20px;
-    margin-top: 13px;
-}
 .box{
     background-color: #1E1E1E;
     height:360px;
@@ -78,5 +91,4 @@ body{
     margin-right: 20px;
     grid-template-columns: auto auto auto auto;
     gap:30px;
-
 }
