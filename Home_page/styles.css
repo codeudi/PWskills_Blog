@@ -8,6 +8,9 @@ body{
     background-color:#292929;
     width: 100vw;
 }
+.blur{
+    filter: blur(4px);
+}
 #addbtn{
     height:30px;
     width:30px;
@@ -31,13 +34,18 @@ body{
 }
 .box{
     background-color: #1E1E1E;
-    height:325px;
+    height:360px;
     width:248px;
     border-radius: 35px;
+    border: 1px solid white;
 }
 .picture{
     height:139px;
     width:199px;
+    margin-left: 23px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    border: 1px solid white;
 }
 .text{
     color:white;
@@ -66,6 +74,8 @@ body{
 }
 .blogs{
     display:grid;
+    margin-left: 20px;
+    margin-right: 20px;
     grid-template-columns: auto auto auto auto;
     gap:30px;
 
