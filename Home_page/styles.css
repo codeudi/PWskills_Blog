@@ -28,6 +28,7 @@ body{
     justify-content: center;
     border-radius: 20px;
     border: none;
+    background-color: white;
 }
 #addbtn:hover{
     padding-left:35px;
@@ -43,11 +44,10 @@ body{
 #section1{
     display:flex;
     justify-content:space-between;
-    margin: 0px 40px 40px 40px;
+    margin: 0px 40px 30px 40px;
     position: relative;
     top:20px;
 }
-
 .box{
     background-color:black;
     height:360px;
@@ -67,7 +67,6 @@ body{
     color:white;
     height:52px;
     margin-right:23px;
-    border:1px solid white;
     padding:5px 0px 0px 5px;
 }
 .blog_modal{
@@ -142,6 +141,7 @@ body{
 }
 .read{
     margin-right: 23px;
+    margin-top: 5px;
     border:none;
     background-color: rgb(239, 177, 177);
     border-radius: 10px;
@@ -149,4 +149,20 @@ body{
 .link{
     text-decoration: none;
     color: red;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    font-size: 50px;
+    color: white;
+}
+.green{
+    color:rgb(102, 218, 64);
+}
+.yellow{
+    color:#FF9900;
+    font-size: 40px;
 }

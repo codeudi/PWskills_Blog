@@ -1,4 +1,7 @@
 localStorage.clear()
+
+
+
 let var1=document.getElementById("addbtn")
 let var2=document.getElementsByClassName("blog_modal")
 
@@ -6,6 +9,7 @@ var1.addEventListener("click",()=>{
     var2[0].classList.remove("disp")
     document.getElementById("section1").classList.add("blur")
     document.getElementsByClassName("blogs")[0].classList.add("blur")
+    document.getElementsByClassName("container")[0].classList.add("blur")
 })
 
 let var3=document.getElementById("addblog")
@@ -76,6 +80,6 @@ var3.addEventListener("click",()=>{
  {
     document.getElementById("section1").classList.remove("blur")
     document.getElementsByClassName("blogs")[0].classList.remove("blur")
+    document.getElementsByClassName("container")[0].classList.remove("blur")
  }
-
 
