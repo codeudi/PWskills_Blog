@@ -11,6 +11,6 @@ let var4=document.getElementById("blogsdata")
         var2.innerHTML=data.description
         var3.src=data.imageurl
         let details=data.content.split('\n').filter(p => p.trim() !== '')
-        let fromattedtext=details.map(p => `<p>${p}</p>`).join('')
+        let fromattedtext=details.map(p => `<p>${p}</p><br>`).join('')
         var4.innerHTML=fromattedtext
         
