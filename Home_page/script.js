@@ -48,6 +48,7 @@ var3.addEventListener("click",()=>{
     {
         
         const regex=new RegExp("^(https?://.*?)(?:\.png|\.jpg|\.jpeg)?$")
+
         if(regex.test(imgurl))
         {
             var4[0].innerHTML=var4[0].innerHTML+
@@ -57,12 +58,13 @@ var3.addEventListener("click",()=>{
         {
             alert("Please enter a valid url for image")
         }
+
     }
 
        let obj=JSON.stringify({"imageurl":imgurl,"BlogTitle":title,"description":descrip,"content":blogdata})
 
        localStorage.setItem("blog"+c,obj)
-       c++
+       c=c+1
 
     var5[2].value=""
     var5[3].value=""
